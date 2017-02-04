@@ -142,6 +142,7 @@ trap "${TRAPFUNC}" 1 2 15
 _techo()
 {
     echo "$(${DDATE}): $@"
+    logger -t ccollect "$(${DDATE}): $@"
 }
 
 # exit on error
