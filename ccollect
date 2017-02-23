@@ -724,4 +724,4 @@ if [ -x "${CPOSTEXEC}" ]; then
 fi
 
 rm -f "${TMP}"
-_techo "Finished"
+_techo "Finished" | add_name
