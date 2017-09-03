@@ -655,7 +655,7 @@ while [ "${source_no}" -lt "${no_sources}" ]; do
     #
     if [ -f "${c_rsync_options}" ]; then
         while read line; do
-            # Trime line.
+            # Trim line.
             ln=$(echo "${line}" | awk '{$1=$1;print;}')
             # Only if ln is non zero length string.
             #
