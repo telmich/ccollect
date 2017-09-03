@@ -655,7 +655,7 @@ while [ "${source_no}" -lt "${no_sources}" ]; do
     #
     if [ -f "${c_rsync_options}" ]; then
         while read line; do
-            # Only if ln is non zero length string (read trims line).
+            # Only if line is non zero length string (read trims line).
             #
             # If line is empty then rsync '' DEST evaluates
             # to transfer current directory to DEST which would
